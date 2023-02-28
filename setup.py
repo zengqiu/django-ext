@@ -8,7 +8,7 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='django-ext',
-    version='0.5',
+    version='0.6',
     url='https://github.com/zengqiu/django-ext',
     license='MIT',
     author='zengqiu',
@@ -18,6 +18,7 @@ setup(
     long_description_content_type='text/markdown',
     packages=find_packages(),
     platforms='any',
+    include_package_data=True,
     install_requires=['django>=3.2', 'django-currentuser>=0.5.3'],
     python_requires='>=3.5',
     classifiers=[
