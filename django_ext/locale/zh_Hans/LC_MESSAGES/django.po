@@ -1,12 +1,12 @@
 # This file is distributed under the same license as the django-ext package.
-#
+# 
 # Translators:
 # zengqiu <zengqiu@qq.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: django-ext 0.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-15 17:15+0800\n"
+"POT-Creation-Date: 2023-04-13 16:41+0800\n"
 "PO-Revision-Date: 2023-02-15 17:15+0800\n"
 "Last-Translator: zengqiu <zengqiu@qq.com>\n"
 "Language-Team: Chinese <zengqiu@qq.com>\n"
@@ -17,25 +17,25 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: .\models.py:7
-msgid "Created at"
+msgid "created at"
 msgstr "创建时间"
 
 #: .\models.py:8
-msgid "Updated at"
+msgid "updated at"
 msgstr "更新时间"
 
 #: .\models.py:15
-msgid "Started at"
+msgid "started at"
 msgstr "开始时间"
 
 #: .\models.py:16
-msgid "Ended at"
+msgid "ended at"
 msgstr "结束时间"
 
 #: .\models.py:23
-msgid "Created by"
+msgid "created by"
 msgstr "创建人"
 
 #: .\models.py:24
-msgid "Updated by"
+msgid "updated by"
 msgstr "更新人"
