@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from setuptools import find_packages, setup
 
 
@@ -8,7 +6,7 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='django-ext',
-    version='0.6',
+    version='0.7',
     url='https://github.com/zengqiu/django-ext',
     license='MIT',
     author='zengqiu',

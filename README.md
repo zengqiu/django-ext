@@ -3,7 +3,7 @@ Django Ext
 
 Some extensions for Django.
 
-# Model
+# Models
 
 ## TimestampModel
 
@@ -24,4 +24,14 @@ MIDDLEWARE = (
     ...,
     'django_currentuser.middleware.ThreadLocalUserMiddleware',
 )
+```
+
+# Commands
+
+## translate
+
+Translate the permission names into the local language.
+
+```
+$ python manage.py translate
 ```
