@@ -16,7 +16,7 @@ class Command(BaseCommand):
                     permission.name = '{0}{1}'.format(action, permission.content_type.name)
                     permission.save()
                     self.stdout.write(self.style.SUCCESS('Successfully translated app: "{}" - model: "{}"'.format(
-                        permission.content_type.app_name,
+                        permission.content_type.app_label,
                         permission.content_type.name)))
         except Exception as e:
             raise CommandError(str(e))
