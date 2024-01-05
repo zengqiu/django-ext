@@ -26,6 +26,26 @@ MIDDLEWARE = (
 )
 ```
 
+## ExtraFieldsManager
+
+`ExtraFieldsManager` is intended to be used in conjunction with `ExtraFieldsQuerySet` to filter extra added fields using custom filter conditions.
+
+While initializing the `ExtraFieldsManager` class, it is necessary to use the `fields` parameter to specify extra fields and their corresponding filter conditions generation functions.
+
+Usage:
+
+```
+class MyModel(models.Model):
+    relation = models.ForeignKey(RelationModel, models.CASCADE, +, null=False)
+
+    objects = ExtraFieldsManager(fields={
+        # users: an extra field that is not present in the model
+        # lambda function: used to generate complex query conditions
+        'users': lambda x: Q(relation__data__users__contained_by=[str(user.id) for user in x]) | \
+        Q(relation__data__groups__contained_by=Group.objects.filter(user__in=x).distinct().values_list('id', flat=True))
+    })
+```
+
 # Commands
 
 ## translate
