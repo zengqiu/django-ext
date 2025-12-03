@@ -1,12 +1,11 @@
 from django.db import models
 from django.db.models import Q
-from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 from django_currentuser.db.models import CurrentUserField
 
 
 class TimestampModel(models.Model):
-    created_at = models.DateTimeField(_('created at'), auto_now_add=True, default=timezone.now)
+    created_at = models.DateTimeField(_('created at'), auto_now_add=True, null=True)
     updated_at = models.DateTimeField(_('updated at'), auto_now=True)
 
     class Meta:

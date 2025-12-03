@@ -6,7 +6,7 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='django-ext',
-    version='0.11',
+    version='0.12',
     url='https://github.com/zengqiu/django-ext',
     license='MIT',
     author='zengqiu',
